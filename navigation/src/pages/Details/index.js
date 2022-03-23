@@ -1,14 +1,12 @@
-import { Button, StyleSheet, Text, View } from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 
-export default function Contacts() {
+export default function Details() {
   return (
     <View style={styles.container}>
-      <Text>Contacts</Text>
-      
+      <Text>Details from users</Text>
     </View>
-  )
+  );
 }
-
 
 const styles = StyleSheet.create({
   container: {

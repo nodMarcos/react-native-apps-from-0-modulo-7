@@ -4,8 +4,8 @@ import {View, Text, StyleSheet, Button} from 'react-native'
 export default function Home() {
   const navigation = useNavigation()
 
-  function navigateToAbout() {
-    navigation.navigate('About', {name: 'Marquin', email: 'marquin@gmail.com'})
+  function navigateToDetails() {
+    navigation.navigate('Details')
   }
   
   return (
@@ -13,7 +13,8 @@ export default function Home() {
       <Text>
         Home
       </Text>
-      <Button title="Go to About" onPress={navigateToAbout} />
+      <Button title="Go to Details" onPress={navigateToDetails} />
+      <Button title="Open Drawer" onPress={() => navigation.openDrawer()} />
     </View>
   )
 }
